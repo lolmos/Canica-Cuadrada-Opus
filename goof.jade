@@ -1,0 +1,139 @@
+ //------------THIS IS CONTENT
+
+
+//-bof variables
+block metas
+	//-meta and universal values  
+	- var id 			= 'e-01'//-the universal id for this object
+	- var title			= 'this is the title' //-the title should be less than 70 characters
+	- var description 	= 'This is a nice description for this page' //- keep to bellow 155 characters add call to action
+	- var og_title		= 'Im click bait' //-95 characters make this enticing to facebook users
+	- var og_image 		= " "//-not sure what to pu here yet
+	- var og_url        = " "//-the relative path of this page
+	- var og_description = " "//-you have 297 characters to work with
+	- var twitter_card	= 'summary' //-summary, photo or player
+	- var twitter_url   = " "//-relative path to root
+	- var twitter_title	= " "//-70 characters 
+	- var twitter_description = "this isn't a descriptions" //-200 characters
+	- var twitter_image = " "//-must be bigger thatn 60x60
+	- var language		= "es"//-either 'en' or 'es' 
+	- var locale		= "event-prueba"//-the absolute path to the alternate language version
+	- var keywords 		= "these, are, the, keywords"//-metadata keywords
+	- var single_name	= "VIP Holbox"  
+	- var cost_low 		= "20"   
+	- var cost_high 	= "89" 
+	- var food_types 	= ['Mexican','Grill', 'Fish', 'Tucateco']
+	- var room_types	= ['Beach view','Bungalows', 'Family appartment']
+	- var amenities		= ['beach bar', 'kids','rent free','beach volley ball','paddle board rentals','bike rentals','beach football']
+	- var business_type = 'food_and_drink'//-ood_and_drink, business, service
+	- var premium 		= true //-true or false
+	- var plus			= true//-true or false
+	- var feature 		= false//-true or false 
+	- var chef			= "Giorgio"  
+	- var telephone		= "984-198-34-34"  
+	- var address		= "Calle Tiburón ballena Lote 10"
+	- var email			= "test@testing.com"
+	- var url 			= "www.thissite.com"
+	- var recomendation = "the spicy noodle sheep food sandwich cake"//text
+	- var capacity		= "45" 
+	- var twitter		= "mytwitetr"
+	- var facebook		= "myfacebook" 
+	- var opening_time	= "Breakfast 8-11, Dinner 6pm-11pm Sat:Breakfast 8-11, Dinner 6pm-12pm, Sun: Breakfast 8-11, Barbacue 12-3pm, Dinner 6pm-12pm"
+	- var wifi			= false//-true or false
+	- var manager		= 'Pepe Pereñas'	  
+	- var proximity_to_beach = '34' 
+	- var check_in_time		= '16:00' 
+	- var check_out_time	= '12:00' 
+	- var pet_friendly		= false//-true or false
+	- var credit_cards 	= true
+	- var part_of			= " "//-is this part of a chain or a global event
+	- var gallery_images	= [{image:'hero4',alt:'some text'},{image:'hero7',alt:'hello kitty'}]
+	- var logo				= " "
+	- var has_pool			= true 
+	- var geo_location		= " "
+	- var listing_feature_title		= "Meet the cooksings"
+	- var listing_feature_image		= [{image:'chef',alt:'some text about the chef'}]
+//-eof variables 
+
+
+//- if premium = true deselect the line below 
+
+//- extends ../layout/pages/_layout-food-and-drink-page--premium.jade
+
+//- extends ../layout/pages/_layout-business-page--premium.jade
+
+//- extends ../layout/pages/_layout-accomodation-page--premium.jade
+
+//- extends ../layout/pages/_layout-tour-page--premium.jade 
+
+extends ../layout/pages/_layout-shopping-page--premium.jade 
+
+//- if premium = false deselect the line below 
+
+//- extends ../layout/pages/_layout-food-and-drink-page--common.jade
+
+//- extends ../layout/pages/_layout-business-page--common.jade
+
+//- extends ../layout/pages/_layout-accomodation-page--common.jade  
+
+//- extends ../layout/pages/_layout-tour-page--common.jade
+
+//- extends ../layout/pages/_layout-shopping-page--common.jade  
+
+
+
+//-the main copy that for this page   
+
+block copy
+	p VHS tattooed typewriter Wes Anderson slow-carb food truck, keffiyeh sartorial.  Twee craft beer deep v pug direct trade  four dollar toast.  Beard four loko YOLO, street art locavore 90&apos;s wolf put a bird on it.  Meggings literally health goth, authentic photo booth synth four loko aesthetic.  Retro pickled migas, synth +1 hashtag swag fap cray High Life 90&apos;s bicycle rights Tumblr.  Tousled hoodie four dollar toast tattooed hashtag wolf fixie Wes Anderson, organic master cleanse health goth pop-up.  Farm-to-table retro bicycle rights selvage, synth hoodie sriracha meh tofu Portland.
+	blockquote Tousled hoodie four dollar toast tattooed hashtag wolf fixie Wes Anderson, organic master cleanse health goth pop-up.  Farm-to-table
+	p VHS tattooed typewriter Wes Anderson slow-carb food truck, keffiyeh sartorial.  Twee craft beer deep v pug direct trade  four dollar toast.  Beard four loko YOLO, street art locavore 90&apos;s wolf put a bird on it.  Meggings literally health goth, authentic photo booth synth four loko aesthetic.  Retro pickled migas, synth +1 hashtag swag fap cray High Life 90&apos;s bicycle rights Tumblr.  Tousled hoodie four dollar toast tattooed hashtag wolf fixie Wes Anderson, organic master cleanse health goth pop-up.  Farm-to-table retro bicycle rights selvage, synth hoodie sriracha meh tofu Portland.
+	<br>
+
+//- remove // if it is premium plus
+block listin_feature_content
+	p is this shit working ?
+	rson slow-carb food truck, keffiyeh sartorial.  Twee craft beer deep v pug direct trade  four dollar toast.  Beard four loko YOLO, street art locavore 90&apos;s wolf put a bird on it.  Meggings literally health goth, authentic photo booth synth four loko aesthetic.  Retro pickled migas, synth +1 hashtag swag fap cray High Life 90&apos;s bicycle rights Tumblr.  Tousled hoodie four dollar toast tattooed hashtag wolf fixie Wes Anderson, organic master cleanse health goth pop-up.  Farm-to-table retro bicycle rights selvage, synth hoodie sriracha meh tofu Portland.
+
+//- food and drink events place this 
+block c-single__events
+	+c-single__repeatable-events('Fridays')
+		+c-event--premium('09:00pm','/images/placeholder.png','and event alt tag','#')
+			a(href= url)
+				h4 Martini Fridays
+			p the text that should go here
+
+	+c-single__repeatable-events('Saturdays')
+		+c-event--premium('11:00pm','/images/placeholder.png','and event alt tag','#')
+			a(href=url)
+				h4 Salsa Lessons and Dancing
+			p learn to shake that ass like a caribbean master
+
+	+c-event--premium('Fri 6 JUNE 08.00am','/images/placeholder.png','an image alt tag','#')
+		a(href=url)
+			h4 title
+		span @main beach
+		p the text that should go here  
+
+//-  for tours place this 
+block c-single__tours
+	+c-listing--tour--static('/images/premiumimage.png','Whale Shark','Whale shark Tour','from $20 USD')
+		p Up to 10px | not suitable for babas
+		
+
+	+c-listing--premium('/images/premiumimage.png','Whale Shark','#','Whale Shark tour','from $20 USD')
+		p the text that should go here
+
+	+c-listing--premium('/images/premiumimage.png','Whale Shark','#','Whale Shark tour','from $20 USD')
+		p the text that should go here
+
+	+c-listing--premium('/images/premiumimage.png','Whale Shark','#','Whale Shark tour','from $20 USD')
+		p the text that should go here
+
+	+c-listing--premium('/images/premiumimage.png','Whale Shark','#','Whale Shark tour','from $20 USD')
+		p the text that should go here
+ 
+
+block c-single__promos
+	+listing__promo--link('images/premiumimage.png','alt','url')
+	+listing__promo--static('images/premiumimage.png','alt')
